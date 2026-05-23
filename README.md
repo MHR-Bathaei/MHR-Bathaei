@@ -14,7 +14,7 @@ Focused on bridging the divide between high-level deep learning concepts and rea
 
 ---
 
-## 🚀 Featured Project: ARGUS-Q Engine
+## 🚀 Featured Project: AETHER-Q Engine
 
 ### [AETHER-Q: Bare-Metal Graph Neural Network Inference Engine](https://github.com/MHR-Bathaei/AETHERQ)
 An ultra-low latency, framework-free C++ inference engine designed to execute localized Graph Neural Networks on space-constrained edge nodes. 
