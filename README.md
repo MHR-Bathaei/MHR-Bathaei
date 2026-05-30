@@ -16,6 +16,15 @@ Currently transitioning from CPU SIMD optimization into GPU kernel engineering a
 **Protocols:** CCSDS Space Packet Protocol (spacecraft telemetry standard)
 
 ---
+Current Focus
+
+• CUDA kernel optimization
+• Transformer inference internals
+• Quantization and memory-efficient serving
+• LLM runtime systems
+• High-performance AI infrastructure
+
+---
 
 ## Projects
 
