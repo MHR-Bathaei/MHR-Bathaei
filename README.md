@@ -1,29 +1,74 @@
-# Hi, I'm Mohammad Reza Bathaei 👋
-### Embedded Systems & Edge AI Engineer
+# Mohammad Reza Bathaei
 
-Focused on bridging the divide between high-level deep learning concepts and real-time, bare-metal hardware constraints. I build highly deterministic, framework-free execution paths optimized for performance-critical edge computing.
-
----
-
-## 🛠️ Core Technical Stack
-
-* **Languages & Paradigms:** C++17/C++20 (Bare-Metal, Zero-Heap Allocation), Python, Object-Oriented Design, Concurrent Systems.
-* **Vector Execution & Hardware Optimization:** SIMD Vectorization, Intel AVX2, AMD Fused Multiply-Accumulate (FMA), Cache-Aligned Memory Layouts.
-* **Libraries & Interfaces:** Eigen Linear Algebra, Inter-Process Communication (IPC via standard I/O pipes), Matplotlib Visualization, JSON Serialization.
-* **Core Domains:** Graph Neural Networks (GNNs), Physics-Informed Neural Networks (PINNs), Real-Time Operating Systems (RTOS) concepts, Digital Signal Processing.
+**ML Systems & Inference Engineer** — I build at the lowest layers of AI execution.  
+Bare-metal C++, zero-allocation memory discipline, and hardware-accelerated inference pipelines.  
+Currently transitioning from CPU SIMD optimization into GPU kernel engineering and LLM inference infrastructure.
 
 ---
 
-## 🚀 Featured Project: AETHER-Q Engine
+## Core Stack
 
-### [AETHER-Q: Bare-Metal Graph Neural Network Inference Engine](https://github.com/MHR-Bathaei/AETHERQ)
-An ultra-low latency, framework-free C++ inference engine designed to execute localized Graph Neural Networks on space-constrained edge nodes. 
-* **Performance:** Achieved a blistering mean inference latency of **4.10 microseconds** via manual 256-bit SIMD register acceleration (`-mavx2`, `-mfma`).
-* **Architecture:** Implemented as a resident background microservice daemon communicate-linked via real-time JSON pipelines to frontend visualizations, boasting zero runtime heap fragmentation.
-* **Safety Integration:** Features a native, mathematical validation layer executing parallel Maxwellian divergence checks directly inside the inference execution sequence.
+**Languages:** C++17/C++20, C, Python  
+**Hardware Acceleration:** Intel AVX2, FMA, SIMD Vectorization, Cache-Aligned Memory Layouts  
+**GPU (Active Learning):** CUDA C++, Triton — porting existing SIMD kernels to GPU  
+**Inference & ML:** Graph Neural Networks, Physics-Informed Neural Networks, Transformer Architecture  
+**Systems:** Zero-Heap Allocation, RTOS Concepts, IPC, Real-Time Telemetry Parsing  
+**Protocols:** CCSDS Space Packet Protocol (spacecraft telemetry standard)
 
 ---
 
-## 📈 Engineering Philosophies
-* **Hardware is Hard, Software Must Be Fast:** Don't throw compute at a software bottleneck. Optimize the instruction paths.
-* **Deterministic Execution over Hype:** Memory safety and fixed runtime baselines are critical requirements for embedded safety compliance.
+## Projects
+
+### [AETHERQ](https://github.com/MHR-Bathaei/AETHERQ) — Bare-Metal GNN Inference Engine
+Zero-heap C inference engine for Graph Neural Networks on edge hardware.  
+**4.10µs mean inference latency** via manual 256-bit SIMD (AVX2/FMA) register acceleration.  
+Framework-free. Zero runtime heap fragmentation. Runs as a background microservice daemon  
+with real-time JSON pipeline output and integrated Maxwellian divergence validation.
+
+`C` `AVX2` `FMA` `SIMD` `Inference` `Edge AI` `Zero-Allocation`
+
+---
+
+### [ECLIPSE-V](https://github.com/MHR-Bathaei/ECLIPSE-V) — Real-Time Object Detection Engine
+Native C++ YOLO inference engine optimized for robotic telemetry applications.  
+**52.9+ FPS** sustained throughput. Contiguous memory design, zero-overhead execution path,  
+bypasses heavy frameworks entirely.
+
+`C++` `Object Detection` `YOLO` `Real-Time` `Zero-Allocation` `Robotics`
+
+---
+
+### [zero-alloc-ccsds-engine](https://github.com/MHR-Bathaei/zero-alloc-ccsds-engine) — Spacecraft Telemetry Parser
+High-throughput C++17 demultiplexer for real-time parsing of CCSDS Space Packet Protocol streams.  
+CCSDS is the telemetry standard used by NASA, ESA, and JAXA in operational spacecraft.  
+Designed for deterministic low-latency processing on edge hardware under hard real-time constraints.
+
+`C++17` `CCSDS` `Spacecraft` `Telemetry` `Space` `Real-Time` `Zero-Allocation`
+
+---
+
+## What I'm Building Toward
+
+My background is in squeezing maximum performance out of constrained hardware at the CPU level —  
+zero-allocation design, manual vectorization, deterministic execution paths.
+
+I'm now applying that same discipline to GPU kernel engineering and LLM inference infrastructure:  
+porting SIMD-optimized kernels to CUDA, studying transformer inference internals (FlashAttention,  
+PagedAttention, quantization), and working toward meaningful contributions to open-source  
+inference engines like llama.cpp.
+
+The hardware changes. The discipline doesn't.
+
+---
+
+## Engineering Principles
+
+- Memory is a first-class constraint, not an afterthought
+- Benchmark everything — intuition without numbers is opinion
+- Deterministic execution over convenient abstractions
+- Understand the hardware before you trust the framework
+
+---
+
+*Open to collaboration, feedback on my projects, and opportunities in ML inference infrastructure.*  
+*Master's student in AI — actively building in public.*
